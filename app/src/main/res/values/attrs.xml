@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalBarView">
+        <attr name="hbv_titleTextSize"  format="dimension"/>
+        <attr name="hbv_valueTextSize"  format="dimension"/>
+        <attr name="hbv_titleTextColor"  format="color"/>
+        <attr name="hbv_valueTextColor"  format="color"/>
+        <attr name="hbv_barColor"  format="color"/>
+        <attr name="hbv_barWidth"  format="dimension"/>
+        <attr name="hbv_dividerWidth"  format="dimension"/>
+        <attr name="hbv_lableRigthMagin"  format="dimension"/>
+    </declare-styleable>
+</resources>
