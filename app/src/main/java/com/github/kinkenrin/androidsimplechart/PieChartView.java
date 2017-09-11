@@ -84,7 +84,7 @@ public class PieChartView extends View {
 
         mCurrentPaint = new TextPaint();
 
-        mTitleText = "机器人转人工会话";
+        mTitleText = "这是标题";
         mBound = new Rect();
         mPaint.setTextSize(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 10, getResources().getDisplayMetrics()));
         mPaint.getTextBounds(mTitleText, 0, mTitleText.length(), mBound);
