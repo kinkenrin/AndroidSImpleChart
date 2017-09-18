@@ -242,6 +242,9 @@ public class PieChartView extends View {
         LinesData linesData;
         for (int i = 0; i < mLinesDataList.size(); i++) {
             linesData = mLinesDataList.get(i);
+            if (linesData.count == 0) {
+                continue;
+            }
             mPath.moveTo(linesData.startX, linesData.startY);
             mPath.lineTo(linesData.turnX, linesData.turnY);
             mPath.lineTo(linesData.endX, linesData.endY);
@@ -313,6 +316,7 @@ public class PieChartView extends View {
             PieEntry pieEntry = mDataMap.get(i);
             DecimalFormat df = new DecimalFormat("0.00");
             String pecent = df.format((float) pieEntry.count / mCount * 100);
+            linesData.count = pieEntry.count;
             linesData.lable = pieEntry.lable;
             linesData.pecent = pieEntry.count + "(" + pecent + ")%";
             // 线的终点
@@ -356,6 +360,8 @@ public class PieChartView extends View {
         String lable;
         String pecent;
         boolean isRight;
+
+        int count;
 
     }
 
